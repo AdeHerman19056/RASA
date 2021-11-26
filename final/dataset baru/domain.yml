@@ -1,0 +1,140 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- Asrama_tamu:
+    use_entities: true
+- Asrama_fasilitas:
+    use_entities: true
+- Asrama_hak_menempati:
+    use_entities: true
+- Asrama_pencabutan_izin_tinggal:
+    use_entities: true
+- Pengajuan_permohonan_pembuatan_KPM:
+    use_entities: true
+- Alur_pengajuan_SO:
+    use_entities: true
+- Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya:
+    use_entities: true
+- Kode_jurusan:
+    use_entities: true
+- Kode_bulan_masuk:
+    use_entities: true
+- Kode_tahun_masuk:
+    use_entities: true
+- Kode_tahun_keluar:
+    use_entities: true
+- Nomor_urut_pendaftaran:
+    use_entities: true
+- NIM:
+    use_entities: true
+- Permohonan_beasiswa:
+    use_entities: true
+- Pelayanan_BAK:
+    use_entities: true
+entities:
+- elektronik
+- NIM
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_Kode_jurusan:
+  - text: |-
+      1. Sarjana SNMPTN = 1 
+      2. Sarjana SBMPTN = 2 
+      3. Sarjana USM Asal SLTA = 3 
+      4. Sarjana USM Asal Diploma 3 = 4 
+      5. USM Program Diploma 3 = 5 
+      6. USM Program Magister dan S3 = 6 
+      7. USM PPDS = 7 
+      8. Program Profesi = 8 
+      9. Pindahan = 9 
+      10. Kerjasama/Darmasiswa = 0
+  utter_Kode_bulan_masuk:
+  - text: Perhatikan digit ke-7 NIM.
+  utter_Kode_tahun_masuk:
+  - text: Perhatikan digit ke-8 dan ke-9 NIM.
+  utter_Kode_tahun_keluar:
+  - text: Perhatikan digit ke-10 dan ke-11 NIM.
+  utter_Nomor_urut_pendaftaran:
+  - text: Perhatikan 3 digit terakhir NIM, semakin kecil angka semakin duluan.
+  utter_Pengajuan_permohonan_pembuatan_KPM:
+  - text: |-
+      Silakan unduh dokumen ini (https://digilib.unsri.ac.id/file/Buku-Pedoman-Akademik-2020-2021-Final.pdf) pada halaman 75 (lampiran 4). Isi dan lampirkan pas foto 2 x 3 cm berwarna (1 lembar), fotokopi KTP/SIM atau surat keterangan dari Fakultas/Jurusan, surat keterangan kehilangan dari Kepolisian (bagi penggantian KPM yang hilang), KPM yang lama (bagi penggantian KPM yang rusak atau salah), lampiran bukti telah menyetor uang sebesar Rp. 25.000,- ke Rekening Rektor pada Bank BNI, dan formulir permohonan pembuatan Kartu pengenal mahasiswa (KPM) pengganti yang berisi biodata mahasiswa (nama, NIM, fakultas, jurusan, program [D3/S1/Magister/Profesi], program-studi [Reguler/Bilingual/Unggulan], kampus[Indralaya/Palembang]) dan keterangan lampiran dokumen poin 1 - 5.
+
+      Kirim ke Rektor / Kepala BAK.
+  utter_Alur_pengajuan_SO:
+  - text: |-
+      Mengisi formulir permohonan SO (silakan unduh dokumen ini (https://digilib.unsri.ac.id/file/Buku-Pedoman-Akademik-2020-2021-Final.pdf) dan buka halaman 76 (lampiran 5)). Formulir SO dapat diperbanyak sesuai dengan keperluan. 
+      Mengumpulkan Formulir Permohonan SO beserta surat pengantar Dekan/Direktur Program. 
+      Usulan SO harus telah diterima di rektorat Universitas Sriwijaya sebelum batas waktu yang ditetapkan. 
+      Surat persetujuan SO dari rektoran dapat diambil di BAK Universitas Sriwijaya 2 minggu kemudian.
+  utter_Asrama_fasilitas:
+  - text: Tidak boleh menambah, merusak, atau mengurangi fasilitas termasuk membawa alat pribadi (termasuk yang elektronik) berukuran besar (dispenser, televisi, rice cooker, cerek listrik, dll) dan mencoret dinding.
+  utter_Asrama_tamu:
+  - text: Boleh membawa tamu sampai jam 21.00 dengan izin petugas dengan tidak membawanya ke kamar.
+  utter_Asrama_pencabutan_izin_tinggal:
+  - text: Ada tenggat 2 minggu untuk meninggalkan asrama oleh sebab lulus, keluar, atau meninggalkan asrama dan pencabutan izin tinggal bisa saja terjadi oleh sebab melanggar, melakukan tindak kriminal, pemakai narkoba, berurusan dengan kepolisian, dll.
+  utter_Asrama_hak_menempati:
+  - text: Tidak diperkenankan memindahkan hak menempati asrama kepada orang lain.
+  utter_taktau:
+  - text: Maaf, saya tidak paham, saya tidak tau
+  utter_Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya:
+  - text: |-
+      Silakan unduh dokumen ini (https://digilib.unsri.ac.id/file/Buku-Pedoman-Akademik-2020-2021-Final.pdf) pada halaman 78 (lampiran 7), isi formulir dan kirim ke Rektor / Wakil Rektor III.
+
+      Lampirkan juga surat Keterangan Kelakuan Baik dan Aktif Kuliah dari Dekan, fotokopi Kartu Pengenal Mahasiswa (KPM), fotokopi Daftar Nilai/KHS (untuk mahasiswa lama), fotokopi raport kelas III dan NEM (bagi mahasiswa baru), pasfoto ukuran 4 x 6 cm (2 lembar) dan 2 x 3 cm (1 lembar), biodata Penghuni Asrama (halaman 81), pernyataan persetujuan dari orang tua (halaman 80), dan pernyataan Perjanjian Penghuni Asrama (halaman 79).
+
+      Perjanjian:
+      1. Tidak akan menggunakan alat listrik berupa Rice Cooker, Cerek listrik atau sejenis.
+      2. Tidak akan menerima tamu di dalam kamar. Tamu diterima di ruang yang ditetapkan paling lambat pukul 21.00 WIB dengan melapor kepada Petugas.
+      3. Tidak akan merusak fasilitas yang ada, seperti mencoret dinding dan perlengkapan lainnya, serta tidak diperkenankan mengadakan perubahan/penambahan terhadap fasilitas asrama tersebut.
+      4. Berupaya menciptakan suasana Asrama mahasiswa kondusif, bersih, dan aman setiap waktu.
+      5. Tidak diperkenankan memindahkan hak menempati asrama kepada orang lain.
+      6. Apabila pemegang surat izin menempati asrama ini berhenti/diberhentikan sebagai mahasiswa atau sudah mengakhiri studinya, maka harus mengakhiri penempatan asrama tersebut, selambat-lambatnya dalam waktu 2 (dua) minggu terhitung mulai tanggal lulus/pemberhentiannya.
+      7. Memenuhi segala peraturan/ketentuan yang diberlakukan secara khusus pada setiap asrama.
+      8. Izin menempati asrama dapat dicabut setiap waktu apabila penghuni melakukan pelanggaran tata tertib asrama, dan pelanggaran terhadap perjanjjian yang telah ditandatangani, terlibat kriminal, narkoba dan lain-lain sesuai dengan keterangan kepolisian.
+      9. Bersedia mematuhi kewajiban membayar biaya sewa Asrama sejumlah yang ditetapkan tepat waktu melalui rekening Bank yang ditentukan.
+  utter_Permohonan_beasiswa:
+  - text: |-
+      Silakan unduh dokumen ini (https://digilib.unsri.ac.id/file/Buku-Pedoman-Akademik-2020-2021-Final.pdf) pada halaman 77 (lampiran 6).
+
+      Isi dan lampirkan pengajuan permohonan tertulis kepada Rektor cq. Pembantu Rektor III, print out pendaftaran on-line, fotokopi Kartu Pengenal Mahasiswa (KPM), fotokopi Kartu Rencana Studi semester genap 2019/2020, fotokopi KHS semester akhir 2019/2020 dengan IPK minimal 3,00 untuk PPA dan 2,50 untuk BBM yang dilegalisir, surat pernyataan tidak sedang menerima beasiswa lain yang diketahui oleh Pembantu Dekan III, surat keterangan layak menerima bantuan beasiswa dari Pembantu Dekan III, bagi orang tua mahasiswa yang berstatus PNS, POLRI, BUMN, cukup melampirkan slip gaji bulan terakhir, fotokopi Kartu Keluarga (Model A) orang tua mahasiswa yang bersangkutan, dan fotokopi Nomor Rekening Bank BNI 46 yang aktif a.n. mahasiswa yang bersangkutan.
+
+      Kirim ke Rektor / Wakil Rektor III.
+  utter_Pelayanan_BAK:
+  - text: Silakan unduh dokumen ini (https://digilib.unsri.ac.id/file/Buku-Pedoman-Akademik-2020-2021-Final.pdf) pada halaman 74 (lampiran 3), isi formulir dan kirim ke Kepala BAK.
+actions:
+- affirm
+- NIM
+forms: {}
+e2e_actions: []

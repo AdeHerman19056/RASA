@@ -1,0 +1,90 @@
+version: "2.0"
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Alur_pengajuan_SO
+  steps:
+  - intent: Alur_pengajuan_SO
+  - action: utter_Alur_pengajuan_SO
+- story: Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya
+  steps:
+  - intent: Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya
+  - action: utter_Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya
+- story: Pengajuan_permohonan_pembuatan_KPM
+  steps:
+  - intent: Pengajuan_permohonan_pembuatan_KPM
+  - action: utter_Pengajuan_permohonan_pembuatan_KPM
+- story: Asrama_tamu
+  steps:
+  - intent: Asrama_tamu
+  - action: utter_Asrama_tamu
+- story: Asrama_fasilitas
+  steps:
+  - intent: Asrama_fasilitas
+  - action: utter_Asrama_fasilitas
+- story: Asrama_hak_menempati
+  steps:
+  - intent: Asrama_hak_menempati
+  - action: utter_Asrama_hak_menempati
+- story: Asrama_pencabutan_izin_tinggal
+  steps:
+  - intent: Asrama_pencabutan_izin_tinggal
+  - action: utter_Asrama_pencabutan_izin_tinggal
+- story: Kode_jurusan
+  steps:
+  - intent: Kode_jurusan
+  - action: utter_Kode_jurusan
+- story: Kode_bulan_masuk
+  steps:
+  - intent: Kode_bulan_masuk
+  - action: utter_Kode_bulan_masuk
+- story: Kode_tahun_masuk
+  steps:
+  - intent: Kode_tahun_masuk
+  - action: utter_Kode_tahun_masuk
+- story: Kode_tahun_keluar
+  steps:
+  - intent: Kode_tahun_keluar
+  - action: utter_Kode_tahun_keluar
+- story: Nomor_urut_pendaftaran
+  steps:
+  - intent: Nomor_urut_pendaftaran
+  - action: utter_Nomor_urut_pendaftaran
+- story: NIM
+  steps:
+  - intent: NIM
+  - action: NIM
+- story: Pelayanan_BAK
+  steps:
+  - intent: Pelayanan_BAK
+  - action: utter_Pelayanan_BAK
+- story: Permohonan_beasiswa
+  steps:
+  - intent: Permohonan_beasiswa
+  - action: utter_Permohonan_beasiswa
+- story: Asrama_perjanjian
+  steps:
+  - intent: Asrama_perjanjian
+  - action: utter_Asrama_perjanjian

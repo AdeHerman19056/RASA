@@ -1,0 +1,208 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: Bertanya/Kode_jurusan
+  examples: |
+    - Berapa kode jurusan unsri?
+    - Apa saja kode jurusan unsri?
+    - Tampilkan kode jurusan unsri
+    - Munculkan kode jurusan unsri
+    - Kode jurusan
+    - kode jurusan unsri
+- intent: Bertanya/Kode_bulan_masuk
+  examples: |
+    - Berapa kode bulan masuk unsri?
+    - Apa saja kode bulan masuk unsri?
+    - Tampilkan kode bulan masuk unsri
+    - Munculkan kode bulan masuk unsri
+    - Kode bulan masuk
+    - Kode bulan masuk unsri
+- intent: Bertanya/Kode_tahun_masuk
+  examples: |
+    - Berapa kode tahun masuk unsri?
+    - Apa saja kode tahun masuk unsri?
+    - Tampilkan kode tahun masuk unsri
+    - Munculkan kode tahun masuk unsri
+    - Kode tahun masuk
+    - Kode tahun masuk unsri
+- intent: Bertanya/Kode_tahun_keluar
+  examples: |
+    - Berapa kode tahun keluar unsri?
+    - Apa saja kode tahun keluar unsri?
+    - Tampilkan kode tahun keluar unsri
+    - Munculkan kode tahun keluar unsri
+    - Kode tahun keluar
+    - Kode tahun keluar unsri
+- intent: Bertanya/Nomor_urut_pendaftaran
+  examples: |
+    - Berapa nomor urut pendaftaran?
+    - Berapa nomor urut pendaftaran unsri?
+    - Bagaimana nomor urut pendaftaran?
+    - Bagaimana nomor urut pendaftaran unsri?
+    - Bagaimana sistem pembagian nomor urut?
+    - Tampilkan sistem nomor urut
+- intent: Bertanya/Alur_pengajuan_SO
+  examples: |
+    - Alur SO
+    - Alur Stop Out
+    - Alur penundaan kegiatan akademik
+    - Alur pengajuan SO
+    - Alur pengajuan Stop Out
+    - Alur pengajuan penundaan kegiatan akademik
+    - Permohonan SO
+    - Permohonan Stop Out
+    - Permohonan penundaan kegiatan akademik
+    - Cara pengajuan SO
+    - Cara pengajuan Stop Out
+    - Cara pengajuan penundaan kegiatan akademik
+    - Cara mengajukan SO
+    - Cara mengajukan Stop Out
+    - Cara mengajukan penundaan kegiatan akademik
+    - Cara SO
+    - Cara Stop Out
+    - Cara penundaan kegiatan akademik
+- intent: Bertanya/Pengajuan_permohonan_pembuatan_KPM
+  examples: |
+    - Apa saja berkas yang diperlukan untuk mengajukan permohonan pembuatan KPM pengganti?
+    - Apa saja dokumen yang diperlukan untuk mengajukan permohonan pembuatan KPM pengganti?
+    - Apa saja yang diperlukan untuk mengajukan permohonan pembuatan KPM pengganti?
+    - Berkas apa saja yang diperlukan untuk mengajukan permohonan pembuatan KPM pengganti?
+    - Dokumen apa saja yang diperlukan untuk mengajukan permohonan pembuatan KPM pengganti?
+- intent: Bertanya/Pengajuan_permohonan_menjadi_penghuni_asrama_mahasiswa_Universitas_Sriwijaya
+  examples: |
+    - Dokumen apa saja yang diperlukan untuk mengajukan permohonan menjadi penghuni asrama mahasiswa Universitas Sriwijaya?
+    - Apakah saya perlu melampirkan surat keterangan kelakuan baik dan aktif kuliah untuk mengajukan permohonan penghuni asrama?
+    - Bagaimana cara mendapatkan surat keterangan kelakuan baik dan aktif kuliah?
+    - Kepada siapa surat permohonan penghuni asrama ditujukan?
+    - Pas foto ukuran berapa yang diperlukan untuk formulir permohonan menjadi penghuni asrama ?
+    - Berapa pasfoto yang dibutuhkan untuk formulir permohonan menjadi penghuni asrama?
+- intent: Bertanya/Asrama_fasilitas
+  examples: |
+    - Bolehkah saya membawa alat elektronik?
+    - Membawa alat elektronik?
+    - Bolehkah saya membawa pulang fasilitas yang ada di asrama?
+- intent: Bertanya/Asrama_hak_menempati
+  examples: |
+    - Bolehkah saya menempati asrama orang lain?
+    - Bolehkah teman saya menempati asrama saya ?
+- intent: Bertanya/Asrama_pencabutan_izin_tinggal
+  examples: |
+    - Saya sudah lulus dan ingin meninggalkan asrama
+    - Meninggalkan asrama
+    - Sudah sudah lulus
+    - Saya kena DO
+    - Saya pindah kampus
+    - Apa yang terjadi jika saya melanggar aturan asrama ?
+    - Saya terjerat kasus kepolisian
+- intent: Bertanya/Asrama_tamu
+  examples: |
+    - Bolehkah saya membawa tamu?
+    - Membawa tamu ke kamar
+    - Jam berapa diperbolehkan bertamu?
+- synonym: menempati
+  examples: |
+    - menumpang
+- intent:Bertanya/ Formulir_Beasiswa
+  examples: |
+    - Bagaimana contoh formulir permohonan beasiswa
+    - Bagaimana bentuk formulir permohonan beasiswa
+    - Seperti apa bentuk formulir beasiswa
+- intent:Bertanya/ Formulir_ditujukan_kepada
+  examples: |
+    - Kepada siapa formulir beasiswa ditujukan
+    - Dikirim ke siapa formulir beasiswa
+    - Kepada siapa formulir beasiswa diberikan
+- intent:Bertanya/ Syarat_mengajukan_beasiswa
+  examples: |
+    - Apa syarat - syarat untuk mengajukan permohonan beasiswa
+    - Apa yang dibutuhkan untuk mengajukan permohonan beasiswa
+    - Persyaratan apa saja yang dibutuhkan untuk mengajukan permohonan beasiswa
+    - Hal-hal apa saja yang dibutuhkan untuk mengajukan permohonan beasiswa
+- intent:Bertanya/ Syarat_mengajukan_beasiswa
+  examples: |
+    - Apa syarat - syarat untuk mengajukan permohonan beasiswa
+    - Apa yang dibutuhkan untuk mengajukan permohonan beasiswa
+    - Persyaratan apa saja yang dibutuhkan untuk mengajukan permohonan beasiswa
+    - Hal-hal apa saja yang dibutuhkan untuk mengajukan permohonan beasiswa
